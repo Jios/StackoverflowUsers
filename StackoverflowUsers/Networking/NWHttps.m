@@ -59,6 +59,7 @@ responseBlock: (DictionaryBlock)responseBlock
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: url];
         [request setHTTPMethod: @"GET"];
         
+        // cache request
         NSCachedURLResponse *cachedResponse = [[NSURLCache sharedURLCache] cachedResponseForRequest: request];
         
         if (cachedResponse.data)
