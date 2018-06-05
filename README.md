@@ -34,10 +34,10 @@
 ![Main Image](images/main.png)
 
 ### Search Users
-![Filter Image](images/user search.png)
+![Filter Image](images/user_search.png)
 
 ### Sorting Options
-![Sorting Options Image](images/sorting options.png)
+![Sorting Options Image](images/sorting_options.png)
 
 ### Sorted by score
-![Sorted by score Image](images/sorty by badge score.png)
+![Sorted by score Image](images/sorty_by_badge_score.png)
