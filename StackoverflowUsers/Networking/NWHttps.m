@@ -41,13 +41,16 @@
 responseBlock: (DictionaryBlock)responseBlock
    errorBlock: (ErrorBlock)errorBlock
 {
-    NSMutableURLRequest *request = [NSMutableURLRequest new];
-    request.HTTPMethod = @"GET";
-    request.URL        = url;
-    
-    [[NWHttps sharedInstance] dataTaskWithRequest: request
-                                    responseBlock: responseBlock
-                                       errorBlock: errorBlock];
+    [Dispatch dispatchAsyncToGlobalQueue: ^{
+        
+        NSMutableURLRequest *request = [NSMutableURLRequest new];
+        request.HTTPMethod = @"GET";
+        request.URL        = url;
+        
+        [[NWHttps sharedInstance] dataTaskWithRequest: request
+                                        responseBlock: responseBlock
+                                           errorBlock: errorBlock];
+    }];
 }
 
 +(void)downloadURL: (NSURL * _Nonnull)url
