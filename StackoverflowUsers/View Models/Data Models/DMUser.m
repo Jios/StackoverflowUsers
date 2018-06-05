@@ -44,6 +44,7 @@
 
     _accountID    = [dict[kAccountID] stringValue];
     _userID       = [dict[kUserID] stringValue];
+    
     _displayName  = dict[kDisplayName];
     _reputation   = [dict[kReputation] integerValue];
     _gravatarLink = dict[kProfileImage];

@@ -14,6 +14,8 @@
 		2E745DF820C4C47B00F126B7 /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E745DF720C4C47B00F126B7 /* TitleView.m */; };
 		2E745E0120C52A9900F126B7 /* ScoreBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E745E0020C52A9900F126B7 /* ScoreBarView.m */; };
 		2E745E0420C52BDB00F126B7 /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E745E0320C52BDB00F126B7 /* MetalView.m */; };
+		2E745E1620C6569500F126B7 /* DMUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E745E1520C6569500F126B7 /* DMUserTests.m */; };
+		2E745E1820C659BD00F126B7 /* DMBadgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E745E1720C659BD00F126B7 /* DMBadgeTests.m */; };
 		2EA35CFA20C1F042009425E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA35CF920C1F042009425E9 /* AppDelegate.m */; };
 		2EA35D0020C1F042009425E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA35CFE20C1F042009425E9 /* Main.storyboard */; };
 		2EA35D0220C1F045009425E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA35D0120C1F045009425E9 /* Assets.xcassets */; };
@@ -28,6 +30,16 @@
 		2EA35D3520C2803C009425E9 /* NWBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA35D3420C2803C009425E9 /* NWBase.m */; };
 		2EA35D3820C28AD7009425E9 /* UIImageView+NWHttps.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA35D3720C28AD7009425E9 /* UIImageView+NWHttps.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E745E0E20C6561F00F126B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EA35CED20C1F042009425E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EA35CF420C1F042009425E9;
+			remoteInfo = StackoverflowUsers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2E745DE420C30AF000F126B7 /* Dispatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dispatch.h; sourceTree = "<group>"; };
@@ -50,6 +62,10 @@
 		2E745E0020C52A9900F126B7 /* ScoreBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreBarView.m; sourceTree = "<group>"; };
 		2E745E0220C52BDB00F126B7 /* MetalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalView.h; sourceTree = "<group>"; };
 		2E745E0320C52BDB00F126B7 /* MetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalView.m; sourceTree = "<group>"; };
+		2E745E0920C6561E00F126B7 /* DataModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E745E0D20C6561F00F126B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E745E1520C6569500F126B7 /* DMUserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMUserTests.m; sourceTree = "<group>"; };
+		2E745E1720C659BD00F126B7 /* DMBadgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMBadgeTests.m; sourceTree = "<group>"; };
 		2EA35CF520C1F042009425E9 /* StackoverflowUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackoverflowUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA35CF820C1F042009425E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2EA35CF920C1F042009425E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +92,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2E745E0620C6561E00F126B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EA35CF220C1F042009425E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,11 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E745E0A20C6561E00F126B7 /* DataModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E745E1520C6569500F126B7 /* DMUserTests.m */,
+				2E745E1720C659BD00F126B7 /* DMBadgeTests.m */,
+				2E745E0D20C6561F00F126B7 /* Info.plist */,
+			);
+			path = DataModelTests;
+			sourceTree = "<group>";
+		};
 		2EA35CEC20C1F042009425E9 = {
 			isa = PBXGroup;
 			children = (
 				2E745DF120C3B7CD00F126B7 /* README.md */,
 				2EA35CF720C1F042009425E9 /* StackoverflowUsers */,
+				2E745E0A20C6561E00F126B7 /* DataModelTests */,
 				2EA35CF620C1F042009425E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				2EA35CF520C1F042009425E9 /* StackoverflowUsers.app */,
+				2E745E0920C6561E00F126B7 /* DataModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +253,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2E745E0820C6561E00F126B7 /* DataModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E745E1020C6561F00F126B7 /* Build configuration list for PBXNativeTarget "DataModelTests" */;
+			buildPhases = (
+				2E745E0520C6561E00F126B7 /* Sources */,
+				2E745E0620C6561E00F126B7 /* Frameworks */,
+				2E745E0720C6561E00F126B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E745E0F20C6561F00F126B7 /* PBXTargetDependency */,
+			);
+			name = DataModelTests;
+			productName = DataModelTests;
+			productReference = 2E745E0920C6561E00F126B7 /* DataModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2EA35CF420C1F042009425E9 /* StackoverflowUsers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EA35D0B20C1F045009425E9 /* Build configuration list for PBXNativeTarget "StackoverflowUsers" */;
@@ -244,6 +297,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Jian;
 				TargetAttributes = {
+					2E745E0820C6561E00F126B7 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 2EA35CF420C1F042009425E9;
+					};
 					2EA35CF420C1F042009425E9 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -263,11 +320,19 @@
 			projectRoot = "";
 			targets = (
 				2EA35CF420C1F042009425E9 /* StackoverflowUsers */,
+				2E745E0820C6561E00F126B7 /* DataModelTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2E745E0720C6561E00F126B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EA35CF320C1F042009425E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +347,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2E745E0520C6561E00F126B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E745E1820C659BD00F126B7 /* DMBadgeTests.m in Sources */,
+				2E745E1620C6569500F126B7 /* DMUserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EA35CF120C1F042009425E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +381,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2E745E0F20C6561F00F126B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EA35CF420C1F042009425E9 /* StackoverflowUsers */;
+			targetProxy = 2E745E0E20C6561F00F126B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		2EA35CFE20C1F042009425E9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -327,6 +409,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2E745E1120C6561F00F126B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DataModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jian.DataModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackoverflowUsers.app/StackoverflowUsers";
+			};
+			name = Debug;
+		};
+		2E745E1220C6561F00F126B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DataModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jian.DataModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackoverflowUsers.app/StackoverflowUsers";
+			};
+			name = Release;
+		};
 		2EA35D0920C1F045009425E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -480,6 +598,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2E745E1020C6561F00F126B7 /* Build configuration list for PBXNativeTarget "DataModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E745E1120C6561F00F126B7 /* Debug */,
+				2E745E1220C6561F00F126B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2EA35CF020C1F042009425E9 /* Build configuration list for PBXProject "StackoverflowUsers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
