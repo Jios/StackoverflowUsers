@@ -52,7 +52,6 @@
 		2E745DEC20C36F0C00F126B7 /* UserListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserListTableViewController.m; sourceTree = "<group>"; };
 		2E745DEE20C374D800F126B7 /* UserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
 		2E745DEF20C374D800F126B7 /* UserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
-		2E745DF120C3B7CD00F126B7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		2E745DF220C4B8FC00F126B7 /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
 		2E745DF320C4BB3D00F126B7 /* GravatarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravatarView.h; sourceTree = "<group>"; };
 		2E745DF420C4BB3D00F126B7 /* GravatarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravatarView.m; sourceTree = "<group>"; };
@@ -122,7 +121,6 @@
 		2EA35CEC20C1F042009425E9 = {
 			isa = PBXGroup;
 			children = (
-				2E745DF120C3B7CD00F126B7 /* README.md */,
 				2EA35CF720C1F042009425E9 /* StackoverflowUsers */,
 				2E745E0A20C6561E00F126B7 /* DataModelTests */,
 				2EA35CF620C1F042009425E9 /* Products */,
