@@ -32,6 +32,7 @@
 
 -(void)filterUsersForName: (NSString * _Nonnull)name;
 
+-(void)sortByName;
 -(void)sortByReputation;
 -(void)sortByBadgeScore;
 

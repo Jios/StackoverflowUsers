@@ -240,31 +240,13 @@ static NSString * const kUsersAPI = @"https://api.stackexchange.com/2.2/users";
 
 // MARK: - # sort
 
--(void)sortByReputation
+-(void)sortByKey: (NSString *)key
+       ascending: (BOOL)ascending
 {
     [Dispatch dispatchAsyncToGlobalQueue: ^{
         
-        NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey: kReputation
-                                                                         ascending: NO];
-        
-        self.arrFilteredUsers = [self.arrFilteredUsers sortedArrayUsingDescriptors: @[sortDescriptor]];
-    }
-                        asyncToMainQueue: ^{
-                          
-                            self.updateBlock();
-                        }];
-}
-
--(void)sortByBadgeScore
-{
-    weakify(self);
-    
-    [Dispatch dispatchAsyncToGlobalQueue: ^{
-        
-        strongify(self);
-        // FIXME: sorting incorrect
-        NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey: @"badge.score"
-                                                                         ascending: NO];
+        NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey: key
+                                                                         ascending: ascending];
         
         self.arrFilteredUsers = [self.arrFilteredUsers sortedArrayUsingDescriptors: @[sortDescriptor]];
     }
@@ -272,6 +254,24 @@ static NSString * const kUsersAPI = @"https://api.stackexchange.com/2.2/users";
                             
                             self.updateBlock();
                         }];
+}
+
+-(void)sortByName
+{
+    [self sortByKey: @"displayName"
+          ascending: YES];
+}
+
+-(void)sortByReputation
+{
+    [self sortByKey: kReputation
+          ascending: NO];
+}
+
+-(void)sortByBadgeScore
+{
+    [self sortByKey: @"badge.score"
+          ascending: NO];
 }
 
 @end

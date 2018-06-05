@@ -92,6 +92,13 @@
                                                                    message: nil
                                                             preferredStyle: UIAlertControllerStyleActionSheet];
     
+    UIAlertAction *nameAction = [UIAlertAction actionWithTitle: @"Name"
+                                                         style: UIAlertActionStyleDefault
+                                                       handler: ^(UIAlertAction * action) {
+                                                           
+                                                           [self.userViewModel sortByName];
+                                                       }];
+    
     UIAlertAction *reputationAction = [UIAlertAction actionWithTitle: @"Reputation"
                                                                style: UIAlertActionStyleDefault
                                                              handler: ^(UIAlertAction * action) {
@@ -108,6 +115,7 @@
                                                            style: UIAlertActionStyleCancel
                                                          handler: nil];
     
+    [alert addAction: nameAction];
     [alert addAction: reputationAction];
     [alert addAction: badgeScoreAction];
     [alert addAction: cancelAction];
