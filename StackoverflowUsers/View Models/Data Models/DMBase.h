@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  DMBase.h
 //  StackoverflowUsers
 //
 //  Created by Jian on 6/1/18.
 //  Copyright © 2018 Jian. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface DMBase : NSObject
 
 @end
-

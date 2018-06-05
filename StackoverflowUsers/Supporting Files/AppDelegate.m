@@ -7,16 +7,24 @@
 //
 
 #import "AppDelegate.h"
+#import "Colors.h"
+
+
 
 @interface AppDelegate ()
 
 @end
 
+
+
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)            application:(UIApplication *)application
+  didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [[UIButton appearance] setTintColor: kStackOverflowColor];
+    
     return YES;
 }
 
