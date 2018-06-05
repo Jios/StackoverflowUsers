@@ -34,13 +34,13 @@
                                                 <constraint firstAttribute="height" constant="85" id="syP-A3-rlg"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Z2-jK-a5R">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Z2-jK-a5R" userLabel="User Info View">
                                             <rect key="frame" x="109" y="10" width="250" height="85"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBh-go-abb">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBh-go-abb" userLabel="name &amp; reputation View">
                                                     <rect key="frame" x="0.0" y="0.0" width="250" height="34"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGe-40-naq">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGe-40-naq" userLabel="name">
                                                             <rect key="frame" x="0.0" y="0.0" width="250" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="QzC-wm-Tlf"/>
@@ -49,7 +49,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reputation: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFm-F0-UOD" userLabel="Location">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reputation: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFm-F0-UOD" userLabel="reputation">
                                                             <rect key="frame" x="0.0" y="19" width="250" height="15"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="15" id="iNB-aT-N7k"/>
@@ -70,10 +70,10 @@
                                                         <constraint firstAttribute="bottom" secondItem="pFm-F0-UOD" secondAttribute="bottom" id="y49-JW-QHn"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dB-Wr-Wkz">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dB-Wr-Wkz" userLabel="badges view">
                                                     <rect key="frame" x="0.0" y="50" width="250" height="35"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="M6c-Mw-Lvz">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="M6c-Mw-Lvz" userLabel="metals Stack View">
                                                             <rect key="frame" x="0.0" y="0.0" width="250" height="15"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CV-x1-n1o" customClass="MetalView">
@@ -93,7 +93,7 @@
                                                                 <constraint firstAttribute="height" constant="15" id="5IN-Cn-NQJ"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-dk-tIS" customClass="ScoreBarView">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-dk-tIS" userLabel="badge Score Bar View" customClass="ScoreBarView">
                                                             <rect key="frame" x="0.0" y="20" width="250" height="15"/>
                                                             <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>

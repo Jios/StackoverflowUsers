@@ -13,7 +13,8 @@
 
 @interface ScoreBarView ()
 
-@property (nonatomic, strong) UIView *barView;
+@property (nonatomic, strong) UIView *scoreBar;
+@property (nonatomic, strong) UILabel *lblScore;
 
 @end
 
@@ -29,30 +30,48 @@
     {
         self.backgroundColor = kColor(235, 235, 235);
         
-        [self addSubview: self.barView];
+        [self addSubview: self.scoreBar];
     }
     
     return self;
 }
 
--(UIView *)barView
+-(UIView *)scoreBar
 {
-    if (!_barView)
+    if (!_scoreBar)
     {
-        _barView = [[UIView alloc] initWithFrame: CGRectZero];
-        _barView.backgroundColor = kStackOverflowColor;
+        _scoreBar = [[UIView alloc] initWithFrame: CGRectZero];
+        _scoreBar.backgroundColor = kStackOverflowColor;
         
-        [self addSubview: _barView];
+        [self addSubview: _scoreBar];
     }
     
-    return _barView;
+    return _scoreBar;
+}
+
+-(UILabel *)lblScore
+{
+    if (!_lblScore)
+    {
+        _lblScore = [[UILabel alloc] initWithFrame: self.bounds];
+        _lblScore.backgroundColor = [UIColor clearColor];
+        _lblScore.font            = [UIFont systemFontOfSize: 10];
+        _lblScore.textColor       = [UIColor whiteColor];
+        _lblScore.textAlignment   = NSTextAlignmentCenter;
+        
+        [self addSubview: _lblScore];
+    }
+    
+    return _lblScore;
 }
 
 -(void)setScore: (float)score
 {
-    self.barView.frame = CGRectMake(0, 0,
+    self.scoreBar.frame = CGRectMake(0, 0,
                                     CGRectGetWidth(self.frame) * score,
                                     CGRectGetHeight(self.frame));
+    self.lblScore.text = [NSString stringWithFormat: @" Badge Score: %.02f%%", score * 100];
+    [self.lblScore sizeToFit];
 }
 
 
